@@ -12,6 +12,7 @@ header
 {
     padding: 50px;
     color: blue;
+    cursor: pointer;
 }
 
 .dots-group
@@ -27,11 +28,13 @@ header
     border-radius: 50%;
     background-color: darkgray;
     margin: 5px;
+    cursor: pointer;
    
 }
 
 .dot.active
 {
     background-color: dodgerblue;
+
    
 }
