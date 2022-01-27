@@ -33,9 +33,21 @@ var app5 = new Vue({
     },
     methods:
       {
+         setIndexSlider(index)
+         {
+            this.indexSlider = index;
+         },
          isActive(index)
          {
             return index === this.indexSlider;
+         },
+         nextPic()
+         {
+            this.indexSlider === this.imagesUri.length - 1 ? this.indexSlider = 0 : this.indexSlider++;
+         },
+         prevPic()
+         {
+            this.indexSlider === 0 ? this.indexSlider = this.imagesUri.length - 1 : this.indexSlider--;
          }
       }
   })
