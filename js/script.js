@@ -58,7 +58,7 @@ var app5 = new Vue({
          },
          clearInterval()
          {
-            this.clearInterval(this.slider);
+           clearInterval(this.slider);
          }
       },
       created: function(){

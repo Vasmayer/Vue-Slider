@@ -16,8 +16,8 @@
         <div class="container position-relative">
             <div id="root">
                 <div class="row">
-                    <div class="col-3 d-flex align-items-center justify-content-center" @mouseover="clearInterval" @mouseleave="clearInterval" @click = "prevPic">
-                        <i class="fas fa-arrow-circle-left fa-4x" ></i>
+                    <div class="col-3 d-flex align-items-center justify-content-center" @click = "prevPic">
+                        <i class="fas fa-arrow-circle-left fa-4x" @mouseover="clearInterval" @mouseleave="createInterval"></i>
                     </div>
                     <div class="col-6">
                         <img v-if="isActive(index)" v-for="(imageUri,index) in imagesUri" :src="imageUri" :alt="'Image'+ index" class="img-fluid">
