@@ -8,3 +8,30 @@ header
     align-items: center;
 }
 
+[class*='fas fa-arrow']
+{
+    padding: 50px;
+    color: blue;
+}
+
+.dots-group
+{
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 5px 10px;  
+}
+.dot
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkgray;
+    margin: 5px;
+   
+}
+
+.dot.active
+{
+    background-color: dodgerblue;
+   
+}

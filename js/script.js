@@ -17,7 +17,6 @@ Bonus:
 2- quando il mouse va in hover sulle freccette o sui pallini l'autoplay si interrompe
 3 - l'autoplay riparte quando il mouse lascia le freccette o i pallini
  */
-console.log('Vue JS OK',Vue);
 
 Vue.config.devtools = true;
 
