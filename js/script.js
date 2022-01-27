@@ -24,6 +24,7 @@ var app5 = new Vue({
     el: '#root',
     data: {
       indexSlider:0,
+      slider:'',
       imagesUri:[
         'img/image1.jpg',
         'img/image2.jpg',
@@ -48,6 +49,15 @@ var app5 = new Vue({
          prevPic()
          {
             this.indexSlider === 0 ? this.indexSlider = this.imagesUri.length - 1 : this.indexSlider--;
+         },
+         createInterval()
+         {
+          this.slider = setInterval(()=>{
+            this.nextPic();
+           },3000);
          }
-      }
+      },
+      created: function(){
+       this.createInterval();
+    }
   })
