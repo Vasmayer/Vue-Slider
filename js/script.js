@@ -55,6 +55,10 @@ var app5 = new Vue({
           this.slider = setInterval(()=>{
             this.nextPic();
            },3000);
+         },
+         clearInterval()
+         {
+            this.clearInterval(this.slider);
          }
       },
       created: function(){
